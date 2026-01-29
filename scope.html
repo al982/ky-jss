@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+<body>
+    <script>
+        let counter = 0;
+
+        function hitMe() {
+            counter++;
+        }
+
+        function other() {
+
+        }
+
+        hitMe();
+        hitMe();
+
+        console.info(counter);
+
+        function first() {
+            let firstVariabe = "firs";
+
+            function firstNested() {
+                console.info(firstVariabe);
+                const firstNestedVariable = "First Nested";
+            }
+
+            firstNested();
+            console.info(firstNestedVariable);
+        }
+
+        function second() {
+            let secondVariable = "second";
+        }
+
+        first();
+        second();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstnama: "Rizky",
+            middlename: "hidaya",
+            lastnama: "tullah",
+        };
+
+        console.info("person.firstname");
+        console.info("person.middlename");
+        console.info("person.lastname");
+
+        const  firstnama = "risky";
+        const lastnama = "tullah";
+
+        with (person) {
+            console.info(firstnama);
+            console.info(middlename);
+            console.info(lastnama);
+        }
+
+    </script>
+</body>
+</html>
