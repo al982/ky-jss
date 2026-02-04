@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON in JavaScript</title>
+</head>
+<body>
+    <h1>JSON Object</h1>
+    <p>JSON adalah objek untuk parsing dan stringifying data. Ini standar untuk pertukaran data. Saya pahami ini sebagai format ringan untuk serialisasi objek.</p>
+    <h2>Contoh Penggunaan:</h2>
+    <script>
+        let obj = { name: "John", age: 30 };
+        let jsonStr = JSON.stringify(obj);
+        console.log(jsonStr); 
+        let parsed = JSON.parse(jsonStr);
+        console.log(parsed); 
+    </script>
+    <p>Buka console untuk output.</p>
+    <p>Referensi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON" target="_blank">MDN JSON</a></p>
+</body>
+</html>

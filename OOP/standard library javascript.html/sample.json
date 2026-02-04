@@ -1,0 +1,11 @@
+{
+    "name": "Sample Data",
+    "items": [
+        {"id": 1, "value": "example1"},
+        {"id": 2, "value": "example2"}
+    ],
+    "metadata": {
+        "created": "2023-10-01",
+        "version": "1.0"
+    }
+}

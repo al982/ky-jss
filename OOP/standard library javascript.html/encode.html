@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encoding in JavaScript</title>
+</head>
+<body>
+    <h1>Encoding (URI/URIComponent)</h1>
+    <p>Ini merujuk pada fungsi global seperti encodeURI dan encodeURIComponent untuk encoding URL. Saya pahami ini sebagai cara aman untuk menangani karakter khusus dalam URL.</p>
+    <h2>Contoh Penggunaan:</h2>
+    <script>
+        let url = "https://example.com?query=hello world";
+        let encoded = encodeURIComponent(url);
+        console.log(encoded); 
+        let decoded = decodeURIComponent(encoded);
+        console.log(decoded); 
+    </script>
+    <p>Buka console untuk output.</p>
+    <p>Referensi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent" target="_blank">MDN encodeURIComponent</a></p>
+</body>
+</html>

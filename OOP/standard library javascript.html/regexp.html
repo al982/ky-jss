@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp in JavaScript</title>
+</head>
+<body>
+    <h1>RegExp Object</h1>
+    <p>RegExp untuk pola pencocokan string. Ini dasar untuk regex. Saya pahami ini sebagai alat untuk validasi dan pencarian teks.</p>
+    <h2>Contoh Penggunaan:</h2>
+    <script>
+        let regex = /hello/i;
+        console.log(regex.test('Hello World'));
+        let match = 'hello world'.match(regex);
+        console.log(match); 
+    </script>
+    <p>Buka console untuk output.</p>
+    <p>Referensi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp" target="_blank">MDN RegExp</a></p>
+</body>
+</html>

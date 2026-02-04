@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Symbol in JavaScript</title>
+</head>
+<body>
+    <h1>Symbol Object</h1>
+    <p>Symbol adalah tipe primitif untuk membuat identifier unik, sering digunakan sebagai key objek untuk menghindari konflik nama. Saya pahami ini sebagai cara untuk membuat properti "privat" atau unik dalam objek, yang tidak dapat diakses secara sembarangan.</p>
+    <h2>Contoh Penggunaan:</h2>
+    <script>
+        let sym1 = Symbol("description");
+        let sym2 = Symbol("description");
+        console.log(sym1 === sym2); 
+        
+        let obj = {};
+        obj[sym1] = "value1";
+        console.log(obj[sym1]); 
+        console.log(Object.keys(obj)); 
+    </script>
+    <p>Buka console browser (F12) untuk melihat output.</p>
+    <p>Referensi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol" target="_blank">MDN Symbol</a></p>
+</body>
+</html>

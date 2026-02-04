@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reflect in JavaScript</title>
+</head>
+<body>
+    <h1>Reflect Object</h1>
+    <p>Reflect menyediakan metode untuk operasi meta seperti construct, get. Ini melengkapi Proxy. Saya pahami ini sebagai API untuk introspeksi objek.</p>
+    <h2>Contoh Penggunaan:</h2>
+    <script>
+        let obj = { a: 1 };
+        console.log(Reflect.get(obj, 'a')); 
+        Reflect.set(obj, 'b', 2);
+        console.log(obj); 
+    </script>
+    <p>Buka console untuk output.</p>
+    <p>Referensi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect" target="_blank">MDN Reflect</a></p>
+</body>
+</html>

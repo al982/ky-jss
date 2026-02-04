@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proxy in JavaScript</title>
+</head>
+<body>
+    <h1>Proxy Object</h1>
+    <p>Proxy memungkinkan intersepsi operasi pada objek. Ini untuk meta-programming. Saya pahami ini sebagai alat untuk kontrol akses dan validasi dinamis.</p>
+    <h2>Contoh Penggunaan:</h2>
+    <script>
+        let target = { name: 'John' };
+        let proxy = new Proxy(target, {
+            get: (obj, prop) => obj[prop] ? obj[prop] : 'Not found'
+        });
+        console.log(proxy.name);
+        console.log(proxy.age); 
+    </script>
+    <p>Buka console untuk output.</p>
+    <p>Referensi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" target="_blank">MDN Proxy</a></p>
+</body>
+</html>

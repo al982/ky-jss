@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BigInt in JavaScript</title>
+</head>
+<body>
+    <h1>BigInt Object</h1>
+    <p>BigInt adalah tipe data untuk bilangan bulat besar yang melebihi batas Number (2^53). Ini berguna untuk matematika presisi tinggi. Saya pahami ini sebagai solusi untuk masalah overflow pada bilangan besar.</p>
+    <h2>Contoh Penggunaan:</h2>
+    <script>
+        let bigNum = 123456789012345678901234567890n;
+        let anotherBig = BigInt("999999999999999999999");
+        console.log(bigNum + anotherBig); // Operasi aritmatika
+    </script>
+    <p>Buka console browser untuk output.</p>
+    <p>Referensi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt" target="_blank">MDN BigInt</a></p>
+</body>
+</html>
